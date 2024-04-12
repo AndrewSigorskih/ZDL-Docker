@@ -63,7 +63,7 @@ Enjoy!
 * Mouse wheel click -- kick
 * Shift -- Dash
 * X -- crouch
-* L -- clear gore/debris (do this before saving to **avoid chashes**)
+* L -- clear gore/debris (do this before saving to **avoid crashes**)
 
 ## Personal notes
 
