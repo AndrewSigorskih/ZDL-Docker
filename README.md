@@ -15,9 +15,9 @@ You can buy classic Doom games on Steam<sup>[1],[2]</sup>, GOG, or download Free
 
 SIGIL episodes can be downloaded from Romero's <a href="https://romero.com/sigil">website</a>. Note that those still need DOOM.wad to run.
 
-### 1.Set up mountable directories
+### 1. Set up mountable directories
 
-Create folder for WADS somewhere on your machine (for example, `"$HOME/games/doom/wads"`) and place WADs you posess in it. Modify `DOOMWADDIR` variable in the sh script to point for the WAD dir.
+Create folder for WADS somewhere on your machine (for example, `"$HOME/games/doom/wads"`) and place WADs you posess in it. Modify `DOOMWADDIR` variable in the sh script to reference this directory.
 
 Create second folder for storing game saves. Modify `DOOMSAVEDIR` variable in the script to correctly reference it as well.
 
@@ -25,17 +25,17 @@ Place ZDL configs from this repo (`zdl-*.ini`) in saves folder (or in WADs, does
 
 ### 2. Download DHTP
 
-Download **Zdoom**-compatible version of Doom High Texture Pack from project <a href="https://github.com/KuriKai/DHTP/wiki">page</a>. Place it in the WADs directory. 
+Download **ZDoom**-compatible version of Doom High Texture Pack from project <a href="https://github.com/KuriKai/DHTP/wiki">page</a>. Place it in the WADs directory. 
 
 [Optional] update file name to match the correct version in `gzdoom.ini` config under the **[doom.Autoload]** section. If you don't plan to use it, remove this section completely.
 
 ### 3. Download Project Brutality mod
 
-Navigate to the active development/"Staging" [branch](https://github.com/pa1nki113r/Project_Brutality/tree/PB_Staging) on project's GitHub, click big green "Code" button -> Download zip. Rename the achive to "project_brutality_staging.zip" (or whatever you prefer) and place it in the WADs directory.
+Navigate to the active development/"PB_Staging" [branch](https://github.com/pa1nki113r/Project_Brutality/tree/PB_Staging) on project's GitHub, click big green "Code" button -> Download zip. Rename the achive to "project_brutality_staging.zip" (or whatever you prefer) and place it in the WADs directory.
 
 ### [Optional] 3.5 Download any other mods
 
-* [IDKFA](https://www.moddb.com/mods/brutal-doom/addons/idkfa-doom-soundtrack) soundtrack update for oridinal Doom
+* [IDKFA](https://www.moddb.com/mods/brutal-doom/addons/idkfa-doom-soundtrack) soundtrack update for oridinal Doom.
 
 ### 4. Build image.
 
@@ -47,7 +47,7 @@ docker build -t zdl-docker .
 
 ### 5. Run
 
-Run the sh script. If everythong works correctly, you should see the ZDL launcher window. Click "ZDL" button on the bottom -> load .ini -> navigate into /saves directory and select the .ini configuration of your preference. You can create custom configs and save those in mounted folders to keep for future use. Find more information on how to use ZDL on project [page](https://github.com/lcferrum/qzdl).
+Run the sh script. If everythong works correctly, you should see the ZDL launcher window. Click "ZDL" button on the bottom -> load .ini -> navigate into `/saves` directory and select the .ini configuration of your preference. You can create custom configs and save those in mounted folders to keep for future use. Find more information on how to use ZDL on project [page](https://github.com/lcferrum/qzdl).
 
 When you are done, click "Launch".
 
