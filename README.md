@@ -2,7 +2,7 @@
 
 Enjoy your favourite DOOM experience without any dependency issues.
 
-This repo contains recipie for creating a Docker image containing GZDoom + ZDL combo as well as configuration files prepeired to run classic Doom games with [Project Brutality](https://projectbrutality.com/) mod.
+This repo contains recipie for creating a Docker image containing GZDoom + ZDL combo as well as configuration files prepaired to run classic Doom games with [Project Brutality](https://projectbrutality.com/) mod.
 
 
 ## How to DOOM
@@ -31,7 +31,7 @@ Download **Zdoom**-compatible version of Doom High Texture Pack from project <a 
 
 ### 3. Download Project Brutality mod
 
-Navigate to the active development/"Staging" [branch](https://github.com/pa1nki113r/Project_Brutality/tree/PB_Staging) on project's GitHub, click big green "Code" button -> Download zip. Rename the achive to "project_brutality_staging.zip" (or whatewer you prefer) and place it in the WADs directory.
+Navigate to the active development/"Staging" [branch](https://github.com/pa1nki113r/Project_Brutality/tree/PB_Staging) on project's GitHub, click big green "Code" button -> Download zip. Rename the achive to "project_brutality_staging.zip" (or whatever you prefer) and place it in the WADs directory.
 
 ### [Optional] 3.5 Download any other mods
 
@@ -71,7 +71,7 @@ Enjoy!
 
 * In order to play SIGIL maps, add them as "External files" in the launcher menu when using the DOOM 1 configuration.
 
-* Sadly, pupular HUD mods like [UDV](https://www.moddb.com/mods/brutal-doom/addons/doomvisor-hud-for-pa1nki113r-v51) (even with 3.0 fixed [version](https://www.moddb.com/mods/brutal-doom/addons/wip-ish-project-brutality-30-compatible-ultimate-doomvisor)) or [CatVisor](https://www.moddb.com/mods/brutal-doom/addons/catsvisor-hud-12-for-bd21-more-widescreen) dont work properly with PB recent versions so we have to use the PB built-un HUD for best experience.
+* Sadly, popular HUD mods like [UDV](https://www.moddb.com/mods/brutal-doom/addons/doomvisor-hud-for-pa1nki113r-v51) (even with 3.0 fixed [version](https://www.moddb.com/mods/brutal-doom/addons/wip-ish-project-brutality-30-compatible-ultimate-doomvisor)) or [CatVisor](https://www.moddb.com/mods/brutal-doom/addons/catsvisor-hud-12-for-bd21-more-widescreen) dont work properly with PB recent versions so we have to use the PB built-un HUD for best experience.
 
 
 [1] <a href="https://store.steampowered.com/app/2280/DOOM_1993/">DOOM (1993) on Steam</a><br>
