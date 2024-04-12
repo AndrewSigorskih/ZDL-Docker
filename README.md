@@ -74,6 +74,6 @@ Enjoy!
 * Sadly, popular HUD mods like [UDV](https://www.moddb.com/mods/brutal-doom/addons/doomvisor-hud-for-pa1nki113r-v51) (even with 3.0 fixed [version](https://www.moddb.com/mods/brutal-doom/addons/wip-ish-project-brutality-30-compatible-ultimate-doomvisor)) or [CatVisor](https://www.moddb.com/mods/brutal-doom/addons/catsvisor-hud-12-for-bd21-more-widescreen) dont work properly with PB recent versions so we have to use the PB built-un HUD for best experience.
 
 
-[1] <a href="https://store.steampowered.com/app/2280/DOOM_1993/">DOOM (1993) on Steam</a><br>
-[2] <a href="https://store.steampowered.com/app/2300/DOOM_II/">DOOM II on Steam</a><br>
+[1] <a href="https://store.steampowered.com/app/2280/DOOM_1993/">DOOM (1993) on Steam</a> -- will get you DOOM.wad<br>
+[2] <a href="https://store.steampowered.com/app/2300/DOOM_II/">DOOM II on Steam</a> -- will get you DOOM2.wad, TNT.wad and PLUTONIA.wad<br>
 [3] <a href="https://freedoom.github.io/download.html">FreeDoom project</a>
