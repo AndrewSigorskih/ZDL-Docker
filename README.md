@@ -11,6 +11,10 @@ This repo contains recipie for creating a Docker image containing GZDoom + ZDL c
 
 You can buy classic Doom games on Steam<sup>[1],[2]</sup>, GOG, or download FreeDoom<sup>[3]</sup> for free.
 
+### [Optional] 0.5 Get Sigil I and II.
+
+SIGIL episodes can be downloaded from Romero's <a href="https://romero.com/sigil">website</a>. Note that those still need DOOM.wad to run.
+
 ### 1.Set up mountable directories
 
 Create folder for WADS somewhere on your machine (for example, `"$HOME/games/doom/wads"`) and place WADs you posess in it. Modify `DOOMWADDIR` variable in the sh script to point for the WAD dir.
@@ -18,10 +22,6 @@ Create folder for WADS somewhere on your machine (for example, `"$HOME/games/doo
 Create second folder for storing game saves. Modify `DOOMSAVEDIR` variable in the script to correctly reference it as well.
 
 Place ZDL configs from this repo (`zdl-*.ini`) in saves folder (or in WADs, doesn't matter actually).
-
-### [Optional] 1.5 Get Sigil I and II.
-
-SIGIL episodes can be downloaded from Romero's <a href="https://romero.com/sigil">website</a>. Note that those still need DOOM.wad to run.
 
 ### 2. Download DHTP
 
