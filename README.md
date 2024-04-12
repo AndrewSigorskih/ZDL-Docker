@@ -9,7 +9,7 @@ This repo contains recipie for creating a Docker image containing GZDoom + ZDL c
 
 ### 0. Get DOOM WADs
 
-You can buy classic Doom games on Steam<sup>[1],[2]</sup>, GOG, or download FreeDoom<sup>[3]</sup>> for free.
+You can buy classic Doom games on Steam<sup>[1],[2]</sup>, GOG, or download FreeDoom<sup>[3]</sup> for free.
 
 ### 1.Set up mountable directories
 
