@@ -63,6 +63,8 @@ Enjoy!
 * Mouse wheel click -- kick
 * Shift -- Dash
 * X -- crouch
+* B -- toggle flashlight
+* H -- taunt
 * L -- clear gore/debris (do this before saving to **avoid crashes**)
 
 ## Personal notes
