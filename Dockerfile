@@ -3,9 +3,9 @@ FROM ubuntu:22.04
 LABEL org.opencontainers.image.authors="Andrey Sigorskikh"
 
 RUN apt-get update && apt-get --yes --no-install-recommends install \
-    alsa-base \
+    # alsa-base \
     ca-certificates \
-    libasound2 \
+    # libasound2 \
     libopenal-dev \
     libfluidsynth-dev \
     libfontconfig1 \
@@ -22,11 +22,12 @@ RUN apt-get update && apt-get --yes --no-install-recommends install \
     libsndfile1-dev \
     libvorbis0a \
     libvorbisenc2 \
+    pulseaudio-utils \
     wget \
     && rm -rf /var/lib/apt/lists
 
 # install gzdoom
-ARG GZDOOM_VER="4.11.3"
+ARG GZDOOM_VER="4.14.2"
 RUN wget --no-check-certificate https://github.com/ZDoom/gzdoom/releases/download/g${GZDOOM_VER}/gzdoom_${GZDOOM_VER}_amd64.deb \
     && apt install ./gzdoom_${GZDOOM_VER}_amd64.deb \
     && rm gzdoom_${GZDOOM_VER}_amd64.deb
