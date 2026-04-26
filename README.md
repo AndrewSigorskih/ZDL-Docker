@@ -42,7 +42,7 @@ Navigate to the active development/"PB_Staging" [branch](https://github.com/pa1n
 Clone this repo, navigate into it's respective folder and build:
 
 ```bash
-docker build -t zdl-docker .
+docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) -t zdl-docker .
 ```
 
 ### 5. Run

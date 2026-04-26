@@ -23,6 +23,7 @@ RUN apt-get update && apt-get --yes --no-install-recommends install \
     libvorbis0a \
     libvorbisenc2 \
     pulseaudio-utils \
+    qtwayland5 \
     wget \
     && rm -rf /var/lib/apt/lists
 
@@ -42,8 +43,12 @@ RUN mkdir zdl_dir && cd zdl_dir \
     && rm -rf zdl_dir
 
 # setup user
-RUN useradd -ms /bin/bash player \
-    && usermod -a -G audio player
+ARG UID=1000
+ARG GID=1000
+RUN groupadd -g $GID player \
+    && useradd -m -u $UID -g $GID player
+# RUN useradd -ms /bin/bash player \
+#     && usermod -a -G audio player
 USER player
 WORKDIR /home/player
 RUN mkdir -p .config/gzdoom
@@ -52,7 +57,7 @@ RUN mkdir -p .config/gzdoom
 # for current container session. You would only encounter this issue if connect to container's
 # interactive shell session and try to invoke gzdoom from cli several times.
 #COPY --chmod=666 gzdoom.ini .config/gzdoom/gzdoom.ini
-COPY gzdoom.ini .config/gzdoom/gzdoom.ini
+# COPY gzdoom.ini .config/gzdoom/gzdoom.ini
 
 # envs
 ENV PATH="${PATH}:/opt/gzdoom"
