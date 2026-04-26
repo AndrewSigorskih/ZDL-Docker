@@ -3,9 +3,7 @@ FROM ubuntu:22.04
 LABEL org.opencontainers.image.authors="Andrey Sigorskikh"
 
 RUN apt-get update && apt-get --yes --no-install-recommends install \
-    # alsa-base \
     ca-certificates \
-    # libasound2 \
     libopenal-dev \
     libfluidsynth-dev \
     libfontconfig1 \
@@ -46,9 +44,9 @@ RUN mkdir zdl_dir && cd zdl_dir \
 ARG UID=1000
 ARG GID=1000
 RUN groupadd -g $GID player \
-    && useradd -m -u $UID -g $GID player
-# RUN useradd -ms /bin/bash player \
-#     && usermod -a -G audio player
+    && useradd -m -u $UID -g $GID player \
+    && usermod -a -G audio player
+
 USER player
 WORKDIR /home/player
 RUN mkdir -p .config/gzdoom
