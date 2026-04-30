@@ -21,7 +21,6 @@ RUN apt-get update && apt-get --yes --no-install-recommends install \
     libvorbis0a \
     libvorbisenc2 \
     pulseaudio-utils \
-    qtwayland5 \
     wget \
     && rm -rf /var/lib/apt/lists
 
@@ -50,12 +49,6 @@ RUN groupadd -g $GID player \
 USER player
 WORKDIR /home/player
 RUN mkdir -p .config/gzdoom
-
-# Actually dont want config to be overwritable as it clears out all Projet Brutality settings
-# for current container session. You would only encounter this issue if connect to container's
-# interactive shell session and try to invoke gzdoom from cli several times.
-#COPY --chmod=666 gzdoom.ini .config/gzdoom/gzdoom.ini
-# COPY gzdoom.ini .config/gzdoom/gzdoom.ini
 
 # envs
 ENV PATH="${PATH}:/opt/gzdoom"
